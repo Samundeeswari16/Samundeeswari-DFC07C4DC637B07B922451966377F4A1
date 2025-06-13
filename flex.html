@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content:space-around;
+        margin-top: 50px;
+    }
+    .box{
+        width: 300px;
+        height: 450px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+       box-shadow: 2px 3px 40px gray;
+    }
+    p{
+        margin-top: 50px;
+      font-size: 20px;
+    }
+    button{
+        background-color: rgb(249, 103, 103);
+        height: 50px;
+        width: 100px;
+    }
+    button:hover{
+        background-color: rgb(3, 3, 140);
+        color: white;
+    }
+    @media (min-width=400px){
+    container{
+    
+        
+        font-size: 14px;
+        box-shadow: none;
+    }
+    }
+    (min-width=600){
+        width: 80%;
+        font-size:16px;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box box1">
+         <h1>Title</h1>
+         <p>$699<sup>offer</sup></p>
+         <p>create a responsive pricing card layout using</p><hr>
+         <Button>Im A button</Button>
+        </div>
+        <div class="box box2">
+         <h1>Title</h1>
+         <p>$699<sup>offer</sup></p>
+          <p>create a responsive pricing card layout using</p><hr>
+          <Button>Im A button</Button>
+        </div>
+        <div class="box box3">
+        <h1>Title</h1>
+        <p>$699<sup>offer</sup></p>
+         <p>create a responsive pricing card layout using</p><hr>
+         <Button>Im A button</Button>
+        </div>
+    </div>
+</body>
+</html>
