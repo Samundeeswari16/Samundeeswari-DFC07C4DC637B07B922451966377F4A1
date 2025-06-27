@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    
+     function findFirstNonRepeating() {
+      const inputString = document.getElementById('inputString').value;
+      let result = '';
+
+      for (let i = 0; i < inputString.length; i++) {
+        let isUnique = true;
+        for (let j = 0; j < inputString.length; j++) {
+          if (i !== j && inputString[i] === inputString[j]) {
+            isUnique = false;
+            break;
+          }
+        }
+        if (isUnique) {
+          result = inputString[i];
+          break;
+        }
+      }
+
+      document.getElementById('result').textContent = result ? `First non-repeating character: ${result}` : 'No non-repeating character found.';
+    }
+  </script>
+</head>
+<body>
+  <h1> Repeating Character</h1>
+  <label for="inputString">Enter a string:</label>
+  <input type="text" id="inputString" placeholder="Type a string">
+  <input type="button" value="Find Character" onclick="findFirstNonRepeating()">
+  <p id="result"></p>
+</body>
+<script>
+    let arr = [1, 2, 2, 3, 4, 4, 5, 6, 6];
+
+let uniqueArr = [...new Set(arr)];
+
+console.log(uniqueArr);
+
+//3
+function LongestWord(sentence) {
+  const words = sentence.split(' ');
+  let longest = '';
+
+  for (let word of words) {
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+
+  return longest;
+}
+
+const sentence = "I am samundeswari ,i am a good girl";
+console.log(LongestWord(sentence)); 
+
+//4
+
+function chain(initialValue) {
+  let value = initialValue;
+
+  return {
+    add(num) {
+      value += num;
+      return this;
+    },
+    subtract(num) {
+      value -= num;
+      return this;
+    },
+    result() {
+      return value;
+    }
+  };
+}
+console.log(chain(5).add(2).subtract(1).result()); 
+
+//5
+
+greet();
+
+function greet() {
+  console.log("Hello!");
+}
+
+console.log(a);
+var a = 10;
+
+var a;
+console.log(a);
+a = 10;
+
+console.log(b);
+let b = 5;
+
+</script>
+</html>

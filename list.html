@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+    <script>
+        import React from 'react';
+
+function NameList() {
+  const names = ["John", "Jan", "Alex"];
+
+  return (
+    <ul>
+      {names.map((name, index) => (
+        <li key={index}>{name}</li>
+      ))}
+    </ul>
+  );
+}
+
+export default NameList;
+<ul>
+  <li>John</li>
+  <li>Jane</li>
+  <li>Alex</li>
+</ul>
+
+
+    </script>
+</body>
+</html>
